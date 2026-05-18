@@ -22,7 +22,7 @@ public class AdicionadorLinkDocumento implements AdicionadorLink<DocumentoExibir
     @Override
     public void adicionarLink(DocumentoExibirDTO objeto) {
         long id = objeto.getId();
-        // Link para o próprio recurso (Self)
+        // Link para o prprio recurso (Self)
         Link linkProprio = WebMvcLinkBuilder
                 .linkTo(WebMvcLinkBuilder
                         .methodOn(DocumentoControle.class)

@@ -44,7 +44,7 @@ public class AutomanagerApplication {
 
             // --- CLIENTE ---
             Usuario cliente = new Usuario();
-            cliente.setNome("Pedro Alcântara de Bragança e Bourbon");
+            cliente.setNome("Pedro Alcntara de Bragana e Bourbon");
             cliente.setNomeSocial("Dom Pedro");
             cliente.getPerfis().add(PerfilUsuario.CLIENTE);
 
@@ -57,7 +57,7 @@ public class AutomanagerApplication {
             endCliente.setEstado("Rio de Janeiro");
             endCliente.setCidade("Rio de Janeiro");
             endCliente.setBairro("Copacabana");
-            endCliente.setRua("Avenida Atlântica");
+            endCliente.setRua("Avenida Atlntica");
             endCliente.setNumero("1702");
             endCliente.setCodigoPostal("22021001");
             endCliente.setInformacoesAdicionais("Hotel Copacabana Palace");
@@ -85,7 +85,7 @@ public class AutomanagerApplication {
 
             Usuario clienteSalvo = usuarioRepositorio.save(cliente);
 
-            // Veículo vinculado ao cliente
+            // Veculo vinculado ao cliente
             Veiculo veiculo = new Veiculo();
             veiculo.setTipo(TipoVeiculo.SEDA);
             veiculo.setModelo("Mercedes-Benz Classe S");
@@ -98,7 +98,7 @@ public class AutomanagerApplication {
 
             // --- FUNCIONARIO ---
             Usuario funcionario = new Usuario();
-            funcionario.setNome("Isabel Cristina de Bragança");
+            funcionario.setNome("Isabel Cristina de Bragana");
             funcionario.setNomeSocial("Princesa Isabel");
             funcionario.getPerfis().add(PerfilUsuario.FUNCIONARIO);
 
@@ -109,7 +109,7 @@ public class AutomanagerApplication {
 
             Endereco endFunc = new Endereco();
             endFunc.setEstado("Rio de Janeiro");
-            endFunc.setCidade("Petrópolis");
+            endFunc.setCidade("Petrpolis");
             endFunc.setBairro("Centro");
             endFunc.setRua("Rua da Imperatriz");
             endFunc.setNumero("350");
@@ -141,7 +141,7 @@ public class AutomanagerApplication {
 
             // --- FORNECEDOR ---
             Usuario fornecedor = new Usuario();
-            fornecedor.setNome("José Bonifácio de Andrada e Silva");
+            fornecedor.setNome("Jos Bonifcio de Andrada e Silva");
             fornecedor.setNomeSocial("Patriarca");
             fornecedor.getPerfis().add(PerfilUsuario.FORNECEDOR);
 
@@ -151,13 +151,13 @@ public class AutomanagerApplication {
             fornecedor.getTelefones().add(telForn);
 
             Endereco endForn = new Endereco();
-            endForn.setEstado("São Paulo");
+            endForn.setEstado("So Paulo");
             endForn.setCidade("Santos");
             endForn.setBairro("Vila Mathias");
-            endForn.setRua("Rua do Comércio");
+            endForn.setRua("Rua do Comrcio");
             endForn.setNumero("215");
             endForn.setCodigoPostal("11013020");
-            endForn.setInformacoesAdicionais("Sobrado, portão azul");
+            endForn.setInformacoesAdicionais("Sobrado, porto azul");
             fornecedor.setEndereco(endForn);
 
             Documento rgForn = new Documento();

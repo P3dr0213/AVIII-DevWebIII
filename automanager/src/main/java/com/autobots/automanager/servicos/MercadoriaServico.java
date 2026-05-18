@@ -28,7 +28,7 @@ public class MercadoriaServico {
 
     public MercadoriaExibirDTO buscarPorIdDTO(Long id) {
         Mercadoria mercadoria = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Mercadoria não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Mercadoria no encontrada"));
         return converterParaExibirDTO(mercadoria);
     }
 
@@ -48,7 +48,7 @@ public class MercadoriaServico {
 
     public void atualizar(MercadoriaAtualizadorDTO dto) {
         Mercadoria mercadoria = repositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Mercadoria não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Mercadoria no encontrada"));
         
         if (dto.getNome() != null) mercadoria.setNome(dto.getNome());
         if (dto.getDescricao() != null) mercadoria.setDescricao(dto.getDescricao());
@@ -62,7 +62,7 @@ public class MercadoriaServico {
 
     public void excluir(Long id) {
         Mercadoria mercadoria = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Mercadoria não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Mercadoria no encontrada"));
         repositorio.delete(mercadoria);
     }
 

@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class CredencialUsuarioSenhaAtualizadorDTO {
-    @NotNull(message = "O id da credencial é obrigatório")
+    @NotNull(message = "O id da credencial  obrigatrio")
     private Long id;
 
     private String nomeUsuario;

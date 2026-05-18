@@ -42,7 +42,7 @@ public class UsuarioServico {
     public UsuarioExibirDTO buscarPorIdDTO(Long id) {
         Usuario usuario = repositorio.findById(id)
                 .orElseThrow(() ->
-                        new EntidadeNaoEncontradaException("Usuário não encontrado"));
+                        new EntidadeNaoEncontradaException("Usurio no encontrado"));
 
         return converterParaExibirDTO(usuario);
     }
@@ -58,7 +58,7 @@ public class UsuarioServico {
             usuario.getPerfis().addAll(dto.getPerfis());
         }
 
-        // ENDEREÇO
+        // ENDEREO
         if (dto.getEndereco() != null) {
 
             Endereco endereco = new Endereco();
@@ -141,7 +141,7 @@ public class UsuarioServico {
 
         Usuario usuario = repositorio.findById(dto.getId())
                 .orElseThrow(() ->
-                        new EntidadeNaoEncontradaException("Usuário não encontrado"));
+                        new EntidadeNaoEncontradaException("Usurio no encontrado"));
 
         if (dto.getNome() != null) {
             usuario.setNome(dto.getNome());
@@ -164,7 +164,7 @@ public class UsuarioServico {
 
         Usuario usuario = repositorio.findById(id)
                 .orElseThrow(() ->
-                        new EntidadeNaoEncontradaException("Usuário não encontrado"));
+                        new EntidadeNaoEncontradaException("Usurio no encontrado"));
 
         repositorio.delete(usuario);
     }
@@ -178,7 +178,7 @@ public class UsuarioServico {
         dto.setNomeSocial(entidade.getNomeSocial());
         dto.setPerfis(entidade.getPerfis());
 
-        // ENDEREÇO
+        // ENDEREO
         if (entidade.getEndereco() != null) {
 
             EnderecoExibirDTO enderecoDTO =
@@ -317,7 +317,7 @@ public class UsuarioServico {
                         .collect(Collectors.toSet())
         );
 
-        // VEÍCULOS
+        // VECULOS
         dto.setVeiculos(
                 entidade.getVeiculos()
                         .stream()

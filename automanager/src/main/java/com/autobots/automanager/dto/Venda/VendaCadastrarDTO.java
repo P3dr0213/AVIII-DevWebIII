@@ -7,13 +7,13 @@ import lombok.Data;
 
 @Data
 public class VendaCadastrarDTO {
-    @NotBlank(message = "A identificação da venda é obrigatória")
+    @NotBlank(message = "A identificao da venda  obrigatria")
     private String identificacao;
 
-    @NotNull(message = "O ID do cliente é obrigatório")
+    @NotNull(message = "O ID do cliente  obrigatrio")
     private Long clienteId;
 
-    @NotNull(message = "O ID do funcionário é obrigatório")
+    @NotNull(message = "O ID do funcionrio  obrigatrio")
     private Long funcionarioId;
 
     private Long veiculoId;

@@ -9,9 +9,9 @@ public class DocumentoCadastroDTO {
 
     private Long idCliente;
 
-    @NotBlank(message = "O tipo do documento é obrigatório")
+    @NotBlank(message = "O tipo do documento  obrigatrio")
     private String tipo;
 
-    @NotBlank(message = "O número do documento é obrigatório")
+    @NotBlank(message = "O nmero do documento  obrigatrio")
     private String numero;
 }

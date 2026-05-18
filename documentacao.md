@@ -4,324 +4,324 @@
 **Root Path:** `d:\AVI-DevWebIII\atvi-autobots-microservico-spring\automanager`
 
 ```
-├── 📁 .maven
-│   ├── 📁 apache-maven-3.9.9
-│   │   ├── 📁 boot
-│   │   │   ├── 📄 plexus-classworlds-2.8.0.jar
-│   │   │   └── 📄 plexus-classworlds.license
-│   │   ├── 📁 conf
-│   │   │   ├── 📁 logging
-│   │   │   │   └── 📄 simplelogger.properties
-│   │   │   ├── ⚙️ settings.xml
-│   │   │   └── ⚙️ toolchains.xml
-│   │   ├── 📁 lib
-│   │   │   ├── 📁 ext
-│   │   │   │   ├── 📁 hazelcast
-│   │   │   │   │   └── 📄 README.txt
-│   │   │   │   ├── 📁 redisson
-│   │   │   │   │   └── 📄 README.txt
-│   │   │   │   └── 📄 README.txt
-│   │   │   ├── 📁 jansi-native
-│   │   │   │   ├── 📁 Windows
-│   │   │   │   │   ├── 📁 arm64
-│   │   │   │   │   │   └── ⚙️ libjansi.so
-│   │   │   │   │   ├── 📁 x86
-│   │   │   │   │   │   └── ⚙️ jansi.dll
-│   │   │   │   │   └── 📁 x86_64
-│   │   │   │   │       └── ⚙️ jansi.dll
-│   │   │   │   └── 📄 README.txt
-│   │   │   ├── 📄 aopalliance-1.0.jar
-│   │   │   ├── 📄 aopalliance.license
-│   │   │   ├── 📄 commons-cli-1.8.0.jar
-│   │   │   ├── 📄 commons-cli.license
-│   │   │   ├── 📄 commons-codec-1.17.1.jar
-│   │   │   ├── 📄 commons-codec.license
-│   │   │   ├── 📄 failureaccess-1.0.2.jar
-│   │   │   ├── 📄 failureaccess.license
-│   │   │   ├── 📄 guava-33.2.1-jre.jar
-│   │   │   ├── 📄 guava.license
-│   │   │   ├── 📄 guice-5.1.0.jar
-│   │   │   ├── 📄 guice.license
-│   │   │   ├── 📄 httpclient-4.5.14.jar
-│   │   │   ├── 📄 httpclient.license
-│   │   │   ├── 📄 httpcore-4.4.16.jar
-│   │   │   ├── 📄 httpcore.license
-│   │   │   ├── 📄 jansi-2.4.1.jar
-│   │   │   ├── 📄 jansi.license
-│   │   │   ├── 📄 javax.annotation-api-1.3.2.jar
-│   │   │   ├── 📄 javax.annotation-api.license
-│   │   │   ├── 📄 javax.inject-1.jar
-│   │   │   ├── 📄 javax.inject.license
-│   │   │   ├── 📄 jcl-over-slf4j-1.7.36.jar
-│   │   │   ├── 📄 jcl-over-slf4j.license
-│   │   │   ├── 📄 maven-artifact-3.9.9.jar
-│   │   │   ├── 📄 maven-builder-support-3.9.9.jar
-│   │   │   ├── 📄 maven-compat-3.9.9.jar
-│   │   │   ├── 📄 maven-core-3.9.9.jar
-│   │   │   ├── 📄 maven-embedder-3.9.9.jar
-│   │   │   ├── 📄 maven-model-3.9.9.jar
-│   │   │   ├── 📄 maven-model-builder-3.9.9.jar
-│   │   │   ├── 📄 maven-plugin-api-3.9.9.jar
-│   │   │   ├── 📄 maven-repository-metadata-3.9.9.jar
-│   │   │   ├── 📄 maven-resolver-api-1.9.22.jar
-│   │   │   ├── 📄 maven-resolver-connector-basic-1.9.22.jar
-│   │   │   ├── 📄 maven-resolver-impl-1.9.22.jar
-│   │   │   ├── 📄 maven-resolver-named-locks-1.9.22.jar
-│   │   │   ├── 📄 maven-resolver-provider-3.9.9.jar
-│   │   │   ├── 📄 maven-resolver-spi-1.9.22.jar
-│   │   │   ├── 📄 maven-resolver-transport-file-1.9.22.jar
-│   │   │   ├── 📄 maven-resolver-transport-http-1.9.22.jar
-│   │   │   ├── 📄 maven-resolver-transport-wagon-1.9.22.jar
-│   │   │   ├── 📄 maven-resolver-util-1.9.22.jar
-│   │   │   ├── 📄 maven-settings-3.9.9.jar
-│   │   │   ├── 📄 maven-settings-builder-3.9.9.jar
-│   │   │   ├── 📄 maven-shared-utils-3.4.2.jar
-│   │   │   ├── 📄 maven-slf4j-provider-3.9.9.jar
-│   │   │   ├── 📄 org.eclipse.sisu.inject-0.9.0.M3.jar
-│   │   │   ├── 📄 org.eclipse.sisu.inject.license
-│   │   │   ├── 📄 org.eclipse.sisu.plexus-0.9.0.M3.jar
-│   │   │   ├── 📄 org.eclipse.sisu.plexus.license
-│   │   │   ├── 📄 plexus-cipher-2.0.jar
-│   │   │   ├── 📄 plexus-cipher.license
-│   │   │   ├── 📄 plexus-component-annotations-2.1.0.jar
-│   │   │   ├── 📄 plexus-component-annotations.license
-│   │   │   ├── 📄 plexus-interpolation-1.27.jar
-│   │   │   ├── 📄 plexus-interpolation.license
-│   │   │   ├── 📄 plexus-sec-dispatcher-2.0.jar
-│   │   │   ├── 📄 plexus-sec-dispatcher.license
-│   │   │   ├── 📄 plexus-utils-3.5.1.jar
-│   │   │   ├── 📄 plexus-utils.license
-│   │   │   ├── 📄 plexus-xml-3.0.1.jar
-│   │   │   ├── 📄 plexus-xml.license
-│   │   │   ├── 📄 slf4j-api-1.7.36.jar
-│   │   │   ├── 📄 slf4j-api.license
-│   │   │   ├── 📄 wagon-file-3.5.3.jar
-│   │   │   ├── 📄 wagon-http-3.5.3.jar
-│   │   │   ├── 📄 wagon-http-shared-3.5.3.jar
-│   │   │   └── 📄 wagon-provider-api-3.5.3.jar
-│   │   ├── 📄 LICENSE
-│   │   ├── 📄 NOTICE
-│   │   └── 📄 README.txt
-│   └── 📦 apache-maven.zip
-├── 📁 config-exemplos
-│   ├── 📄 application-mysql.properties.example
-│   ├── 📄 application-postgresql.properties.example
-│   └── 📄 application-sqlserver.properties.example
-├── 📁 scripts-db
-│   └── 📄 criar-banco.sql
-├── 📁 src
-│   ├── 📁 main
-│   │   ├── 📁 java
-│   │   │   └── 📁 com
-│   │   │       └── 📁 autobots
-│   │   │           └── 📁 automanager
-│   │   │               ├── 📁 config
-│   │   │               │   └── ☕ JacksonConfig.java
-│   │   │               ├── 📁 controles
-│   │   │               │   ├── ☕ ClienteControle.java
-│   │   │               │   ├── ☕ CredencialCodigoBarraControle.java
-│   │   │               │   ├── ☕ CredencialUsuarioSenhaControle.java
-│   │   │               │   ├── ☕ DocumentoControle.java
-│   │   │               │   ├── ☕ EmailControle.java
-│   │   │               │   ├── ☕ EmpresaControle.java
-│   │   │               │   ├── ☕ EnderecoControle.java
-│   │   │               │   ├── ☕ MercadoriaControle.java
-│   │   │               │   ├── ☕ ServicoControle.java
-│   │   │               │   ├── ☕ TelefoneControle.java
-│   │   │               │   ├── ☕ UsuarioControle.java
-│   │   │               │   ├── ☕ VeiculoControle.java
-│   │   │               │   └── ☕ VendaControle.java
-│   │   │               ├── 📁 dto
-│   │   │               │   ├── 📁 Cliente
-│   │   │               │   │   ├── ☕ ClienteAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ ClienteCadastrarDTO.java
-│   │   │               │   │   └── ☕ ClienteExibirDTO.java
-│   │   │               │   ├── 📁 CredencialCodigoBarra
-│   │   │               │   │   ├── ☕ CredencialQRAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ CredencialQRCadastrarDTO.java
-│   │   │               │   │   └── ☕ CredencialQRExibirDTO.java
-│   │   │               │   ├── 📁 CredencialUsuarioSenha
-│   │   │               │   │   ├── ☕ CredencialUsuarioSenhaAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ CredencialUsuarioSenhaCadastrarDTO.java
-│   │   │               │   │   └── ☕ CredencialUsuarioSenhaExibirDTO.java
-│   │   │               │   ├── 📁 Documento
-│   │   │               │   │   ├── ☕ DocumentoAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ DocumentoCadastroDTO.java
-│   │   │               │   │   └── ☕ DocumentoExibirDTO.java
-│   │   │               │   ├── 📁 Email
-│   │   │               │   │   ├── ☕ EmailAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ EmailCadastroDTO.java
-│   │   │               │   │   └── ☕ EmailExibirDTO.java
-│   │   │               │   ├── 📁 Empresa
-│   │   │               │   │   ├── ☕ EmpresaAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ EmpresaCadastrarDTO.java
-│   │   │               │   │   └── ☕ EmpresaExibirDTO.java
-│   │   │               │   ├── 📁 Endereco
-│   │   │               │   │   ├── ☕ EnderecoAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ EnderecoCadastroDTO.java
-│   │   │               │   │   └── ☕ EnderecoExibirDTO.java
-│   │   │               │   ├── 📁 Mercadoria
-│   │   │               │   │   ├── ☕ MercadoriaAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ MercadoriaCadastrarDTO.java
-│   │   │               │   │   └── ☕ MercadoriaExibirDTO.java
-│   │   │               │   ├── 📁 Servico
-│   │   │               │   │   ├── ☕ ServicoAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ ServicoCadastrarDTO.java
-│   │   │               │   │   └── ☕ ServicoExibirDTO.java
-│   │   │               │   ├── 📁 Telefone
-│   │   │               │   │   ├── ☕ TelefoneAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ TelefoneCadastroDTO.java
-│   │   │               │   │   └── ☕ TelefoneExibirDTO.java
-│   │   │               │   ├── 📁 Usuario
-│   │   │               │   │   ├── ☕ UsuarioAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ UsuarioCadastrarDTO.java
-│   │   │               │   │   └── ☕ UsuarioExibirDTO.java
-│   │   │               │   ├── 📁 Veiculo
-│   │   │               │   │   ├── ☕ VeiculoAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ VeiculoCadastrarDTO.java
-│   │   │               │   │   └── ☕ VeiculoExibirDTO.java
-│   │   │               │   ├── 📁 Venda
-│   │   │               │   │   ├── ☕ VendaAtualizadorDTO.java
-│   │   │               │   │   ├── ☕ VendaCadastrarDTO.java
-│   │   │               │   │   └── ☕ VendaExibirDTO.java
-│   │   │               │   ├── 📁 a
-│   │   │               │   └── ☕ ErroRespostaDTO.java
-│   │   │               ├── 📁 entidades
-│   │   │               │   ├── ☕ Cliente.java
-│   │   │               │   ├── ☕ Credencial.java
-│   │   │               │   ├── ☕ CredencialCodigoBarra.java
-│   │   │               │   ├── ☕ CredencialUsuarioSenha.java
-│   │   │               │   ├── ☕ Documento.java
-│   │   │               │   ├── ☕ Email.java
-│   │   │               │   ├── ☕ Empresa.java
-│   │   │               │   ├── ☕ Endereco.java
-│   │   │               │   ├── ☕ Mercadoria.java
-│   │   │               │   ├── ☕ Servico.java
-│   │   │               │   ├── ☕ Telefone.java
-│   │   │               │   ├── ☕ Usuario.java
-│   │   │               │   ├── ☕ Veiculo.java
-│   │   │               │   └── ☕ Venda.java
-│   │   │               ├── 📁 enumeracoes
-│   │   │               │   ├── ☕ PerfilUsuario.java
-│   │   │               │   ├── ☕ TipoDocumento.java
-│   │   │               │   └── ☕ TipoVeiculo.java
-│   │   │               ├── 📁 excecoes
-│   │   │               │   ├── 📁 personalizado
-│   │   │               │   │   └── ☕ EntidadeNaoEncontradaException.java
-│   │   │               │   └── ☕ ManipuladorGlobal.java
-│   │   │               ├── 📁 modeladores
-│   │   │               │   ├── ☕ ClienteModelador.java
-│   │   │               │   ├── ☕ CredencialCodigoBarraModelador.java
-│   │   │               │   ├── ☕ CredencialUsuarioSenhaModelador.java
-│   │   │               │   ├── ☕ DocumentoModelador.java
-│   │   │               │   ├── ☕ EmailModelador.java
-│   │   │               │   ├── ☕ EmpresaModelador.java
-│   │   │               │   ├── ☕ EnderecoModelador.java
-│   │   │               │   ├── ☕ MercadoriaModelador.java
-│   │   │               │   ├── ☕ ServicoModelador.java
-│   │   │               │   ├── ☕ TelefoneModelador.java
-│   │   │               │   ├── ☕ UsuarioModelador.java
-│   │   │               │   ├── ☕ VeiculoModelador.java
-│   │   │               │   └── ☕ VendaModelador.java
-│   │   │               ├── 📁 modelo
-│   │   │               │   ├── 📁 Cliente
-│   │   │               │   │   ├── ☕ AdicionadorLinkCliente.java
-│   │   │               │   │   ├── ☕ ClienteAtualizador.java
-│   │   │               │   │   └── ☕ ClienteSelecionador.java
-│   │   │               │   ├── 📁 CredencialCodigoBarra
-│   │   │               │   │   ├── ☕ AdicionadorLinkCredencialBarra.java
-│   │   │               │   │   ├── ☕ CredencialCodigoBarraAtualizador.java
-│   │   │               │   │   └── ☕ CredencialCodigoBarraSelecionador.java
-│   │   │               │   ├── 📁 CredencialUsuarioSenha
-│   │   │               │   │   ├── ☕ AdicionadorLinkCredencialUsuarioSenha.java
-│   │   │               │   │   ├── ☕ CredencialUsuarioSenhaAtualizador.java
-│   │   │               │   │   └── ☕ CredencialUsuarioSenhaSelecionador.java
-│   │   │               │   ├── 📁 Documento
-│   │   │               │   │   ├── ☕ AdicionadorLinkDocumento.java
-│   │   │               │   │   ├── ☕ DocumentoAtualizador.java
-│   │   │               │   │   └── ☕ DocumentoSelecionador.java
-│   │   │               │   ├── 📁 Email
-│   │   │               │   │   ├── ☕ AdicionadorLinkEmail.java
-│   │   │               │   │   ├── ☕ EmailAtualizador.java
-│   │   │               │   │   └── ☕ EmailSelecionador.java
-│   │   │               │   ├── 📁 Empresa
-│   │   │               │   │   ├── ☕ AdicionadorLinkEmpresa.java
-│   │   │               │   │   ├── ☕ EmpresaAtualizador.java
-│   │   │               │   │   └── ☕ EmpresaSelecionador.java
-│   │   │               │   ├── 📁 Endereco
-│   │   │               │   │   ├── ☕ AdicionadorLinkEndereco.java
-│   │   │               │   │   ├── ☕ EnderecoAtualizador.java
-│   │   │               │   │   └── ☕ EnderecoSelecionador.java
-│   │   │               │   ├── 📁 Mercadoria
-│   │   │               │   │   ├── ☕ AdicionadorLinkMercadoria.java
-│   │   │               │   │   ├── ☕ MercadoriaAtualizador.java
-│   │   │               │   │   └── ☕ MercadoriaSelecionador.java
-│   │   │               │   ├── 📁 Servico
-│   │   │               │   │   ├── ☕ AdicionadorLinkServico.java
-│   │   │               │   │   ├── ☕ ServicoAtualizador.java
-│   │   │               │   │   └── ☕ ServicoSelecionador.java
-│   │   │               │   ├── 📁 Telefone
-│   │   │               │   │   ├── ☕ AdicionadorLinkTelefone.java
-│   │   │               │   │   ├── ☕ TelefoneAtualizador.java
-│   │   │               │   │   └── ☕ TelefoneSelecionador.java
-│   │   │               │   ├── 📁 Usuario
-│   │   │               │   │   ├── ☕ AdicionadorLinkUsuario.java
-│   │   │               │   │   ├── ☕ UsuarioAtualizador.java
-│   │   │               │   │   └── ☕ UsuarioSelecionador.java
-│   │   │               │   ├── 📁 Veiculo
-│   │   │               │   │   ├── ☕ AdicionadorLinkVeiculo.java
-│   │   │               │   │   ├── ☕ VeiculoAtualizador.java
-│   │   │               │   │   └── ☕ VeiculoSelecionador.java
-│   │   │               │   ├── 📁 Venda
-│   │   │               │   │   ├── ☕ AdicionadorLinkVenda.java
-│   │   │               │   │   ├── ☕ VendaAtualizador.java
-│   │   │               │   │   └── ☕ VendaSelecionador.java
-│   │   │               │   ├── ☕ AdicionadorLink.java
-│   │   │               │   └── ☕ StringVerificadorNulo.java
-│   │   │               ├── 📁 repositorios
-│   │   │               │   ├── ☕ ClienteRepositorio.java
-│   │   │               │   ├── ☕ CredencialCodigoBarraRepositorio.java
-│   │   │               │   ├── ☕ CredencialUsuarioSenhaRepositorio.java
-│   │   │               │   ├── ☕ DocumentoRepositorio.java
-│   │   │               │   ├── ☕ EmailRepositorio.java
-│   │   │               │   ├── ☕ EmpresaRepositorio.java
-│   │   │               │   ├── ☕ EnderecoRepositorio.java
-│   │   │               │   ├── ☕ MercadoriaRepositorio.java
-│   │   │               │   ├── ☕ ServicoRepositorio.java
-│   │   │               │   ├── ☕ TelefoneRepositorio.java
-│   │   │               │   ├── ☕ UsuarioRepositorio.java
-│   │   │               │   ├── ☕ VeiculoRepositorio.java
-│   │   │               │   └── ☕ VendaRepositorio.java
-│   │   │               ├── 📁 servicos
-│   │   │               │   ├── ☕ ClienteServico.java
-│   │   │               │   ├── ☕ CredencialCodigoBarraServico.java
-│   │   │               │   ├── ☕ CredencialUsuarioSenhaServico.java
-│   │   │               │   ├── ☕ DocumentoServico.java
-│   │   │               │   ├── ☕ EmailServico.java
-│   │   │               │   ├── ☕ EmpresaServico.java
-│   │   │               │   ├── ☕ EnderecoServico.java
-│   │   │               │   ├── ☕ MercadoriaServico.java
-│   │   │               │   ├── ☕ ServicoServico.java
-│   │   │               │   ├── ☕ TelefoneServico.java
-│   │   │               │   ├── ☕ UsuarioServico.java
-│   │   │               │   ├── ☕ VeiculoServico.java
-│   │   │               │   └── ☕ VendaServico.java
-│   │   │               ├── ☕ AutomanagerApplication.java
-│   │   │               └── 📄 autobots.lnk
-│   │   └── 📁 resources
-│   │       └── 📄 application.properties
-│   └── 📁 test
-│       └── 📁 java
-│           └── 📁 com
-│               └── 📁 autobots
-│                   └── 📁 automanager
-│                       └── ☕ AutomanagerApplicationTests.java
-├── 📝 BANCO_DE_DADOS.md
-├── 📝 CHANGELOG.md
-├── 📝 README.md
-├── 📄 mvnw
-├── 📄 mvnw.cmd
-└── ⚙️ pom.xml
+  .maven
+     apache-maven-3.9.9
+        boot
+           plexus-classworlds-2.8.0.jar
+           plexus-classworlds.license
+        conf
+           logging
+              simplelogger.properties
+           settings.xml
+           toolchains.xml
+        lib
+           ext
+              hazelcast
+                 README.txt
+              redisson
+                 README.txt
+              README.txt
+           jansi-native
+              Windows
+                 arm64
+                    libjansi.so
+                 x86
+                    jansi.dll
+                 x86_64
+                     jansi.dll
+              README.txt
+           aopalliance-1.0.jar
+           aopalliance.license
+           commons-cli-1.8.0.jar
+           commons-cli.license
+           commons-codec-1.17.1.jar
+           commons-codec.license
+           failureaccess-1.0.2.jar
+           failureaccess.license
+           guava-33.2.1-jre.jar
+           guava.license
+           guice-5.1.0.jar
+           guice.license
+           httpclient-4.5.14.jar
+           httpclient.license
+           httpcore-4.4.16.jar
+           httpcore.license
+           jansi-2.4.1.jar
+           jansi.license
+           javax.annotation-api-1.3.2.jar
+           javax.annotation-api.license
+           javax.inject-1.jar
+           javax.inject.license
+           jcl-over-slf4j-1.7.36.jar
+           jcl-over-slf4j.license
+           maven-artifact-3.9.9.jar
+           maven-builder-support-3.9.9.jar
+           maven-compat-3.9.9.jar
+           maven-core-3.9.9.jar
+           maven-embedder-3.9.9.jar
+           maven-model-3.9.9.jar
+           maven-model-builder-3.9.9.jar
+           maven-plugin-api-3.9.9.jar
+           maven-repository-metadata-3.9.9.jar
+           maven-resolver-api-1.9.22.jar
+           maven-resolver-connector-basic-1.9.22.jar
+           maven-resolver-impl-1.9.22.jar
+           maven-resolver-named-locks-1.9.22.jar
+           maven-resolver-provider-3.9.9.jar
+           maven-resolver-spi-1.9.22.jar
+           maven-resolver-transport-file-1.9.22.jar
+           maven-resolver-transport-http-1.9.22.jar
+           maven-resolver-transport-wagon-1.9.22.jar
+           maven-resolver-util-1.9.22.jar
+           maven-settings-3.9.9.jar
+           maven-settings-builder-3.9.9.jar
+           maven-shared-utils-3.4.2.jar
+           maven-slf4j-provider-3.9.9.jar
+           org.eclipse.sisu.inject-0.9.0.M3.jar
+           org.eclipse.sisu.inject.license
+           org.eclipse.sisu.plexus-0.9.0.M3.jar
+           org.eclipse.sisu.plexus.license
+           plexus-cipher-2.0.jar
+           plexus-cipher.license
+           plexus-component-annotations-2.1.0.jar
+           plexus-component-annotations.license
+           plexus-interpolation-1.27.jar
+           plexus-interpolation.license
+           plexus-sec-dispatcher-2.0.jar
+           plexus-sec-dispatcher.license
+           plexus-utils-3.5.1.jar
+           plexus-utils.license
+           plexus-xml-3.0.1.jar
+           plexus-xml.license
+           slf4j-api-1.7.36.jar
+           slf4j-api.license
+           wagon-file-3.5.3.jar
+           wagon-http-3.5.3.jar
+           wagon-http-shared-3.5.3.jar
+           wagon-provider-api-3.5.3.jar
+        LICENSE
+        NOTICE
+        README.txt
+     apache-maven.zip
+  config-exemplos
+     application-mysql.properties.example
+     application-postgresql.properties.example
+     application-sqlserver.properties.example
+  scripts-db
+     criar-banco.sql
+  src
+     main
+        java
+           com
+               autobots
+                   automanager
+                       config
+                          JacksonConfig.java
+                       controles
+                          ClienteControle.java
+                          CredencialCodigoBarraControle.java
+                          CredencialUsuarioSenhaControle.java
+                          DocumentoControle.java
+                          EmailControle.java
+                          EmpresaControle.java
+                          EnderecoControle.java
+                          MercadoriaControle.java
+                          ServicoControle.java
+                          TelefoneControle.java
+                          UsuarioControle.java
+                          VeiculoControle.java
+                          VendaControle.java
+                       dto
+                          Cliente
+                             ClienteAtualizadorDTO.java
+                             ClienteCadastrarDTO.java
+                             ClienteExibirDTO.java
+                          CredencialCodigoBarra
+                             CredencialQRAtualizadorDTO.java
+                             CredencialQRCadastrarDTO.java
+                             CredencialQRExibirDTO.java
+                          CredencialUsuarioSenha
+                             CredencialUsuarioSenhaAtualizadorDTO.java
+                             CredencialUsuarioSenhaCadastrarDTO.java
+                             CredencialUsuarioSenhaExibirDTO.java
+                          Documento
+                             DocumentoAtualizadorDTO.java
+                             DocumentoCadastroDTO.java
+                             DocumentoExibirDTO.java
+                          Email
+                             EmailAtualizadorDTO.java
+                             EmailCadastroDTO.java
+                             EmailExibirDTO.java
+                          Empresa
+                             EmpresaAtualizadorDTO.java
+                             EmpresaCadastrarDTO.java
+                             EmpresaExibirDTO.java
+                          Endereco
+                             EnderecoAtualizadorDTO.java
+                             EnderecoCadastroDTO.java
+                             EnderecoExibirDTO.java
+                          Mercadoria
+                             MercadoriaAtualizadorDTO.java
+                             MercadoriaCadastrarDTO.java
+                             MercadoriaExibirDTO.java
+                          Servico
+                             ServicoAtualizadorDTO.java
+                             ServicoCadastrarDTO.java
+                             ServicoExibirDTO.java
+                          Telefone
+                             TelefoneAtualizadorDTO.java
+                             TelefoneCadastroDTO.java
+                             TelefoneExibirDTO.java
+                          Usuario
+                             UsuarioAtualizadorDTO.java
+                             UsuarioCadastrarDTO.java
+                             UsuarioExibirDTO.java
+                          Veiculo
+                             VeiculoAtualizadorDTO.java
+                             VeiculoCadastrarDTO.java
+                             VeiculoExibirDTO.java
+                          Venda
+                             VendaAtualizadorDTO.java
+                             VendaCadastrarDTO.java
+                             VendaExibirDTO.java
+                          a
+                          ErroRespostaDTO.java
+                       entidades
+                          Cliente.java
+                          Credencial.java
+                          CredencialCodigoBarra.java
+                          CredencialUsuarioSenha.java
+                          Documento.java
+                          Email.java
+                          Empresa.java
+                          Endereco.java
+                          Mercadoria.java
+                          Servico.java
+                          Telefone.java
+                          Usuario.java
+                          Veiculo.java
+                          Venda.java
+                       enumeracoes
+                          PerfilUsuario.java
+                          TipoDocumento.java
+                          TipoVeiculo.java
+                       excecoes
+                          personalizado
+                             EntidadeNaoEncontradaException.java
+                          ManipuladorGlobal.java
+                       modeladores
+                          ClienteModelador.java
+                          CredencialCodigoBarraModelador.java
+                          CredencialUsuarioSenhaModelador.java
+                          DocumentoModelador.java
+                          EmailModelador.java
+                          EmpresaModelador.java
+                          EnderecoModelador.java
+                          MercadoriaModelador.java
+                          ServicoModelador.java
+                          TelefoneModelador.java
+                          UsuarioModelador.java
+                          VeiculoModelador.java
+                          VendaModelador.java
+                       modelo
+                          Cliente
+                             AdicionadorLinkCliente.java
+                             ClienteAtualizador.java
+                             ClienteSelecionador.java
+                          CredencialCodigoBarra
+                             AdicionadorLinkCredencialBarra.java
+                             CredencialCodigoBarraAtualizador.java
+                             CredencialCodigoBarraSelecionador.java
+                          CredencialUsuarioSenha
+                             AdicionadorLinkCredencialUsuarioSenha.java
+                             CredencialUsuarioSenhaAtualizador.java
+                             CredencialUsuarioSenhaSelecionador.java
+                          Documento
+                             AdicionadorLinkDocumento.java
+                             DocumentoAtualizador.java
+                             DocumentoSelecionador.java
+                          Email
+                             AdicionadorLinkEmail.java
+                             EmailAtualizador.java
+                             EmailSelecionador.java
+                          Empresa
+                             AdicionadorLinkEmpresa.java
+                             EmpresaAtualizador.java
+                             EmpresaSelecionador.java
+                          Endereco
+                             AdicionadorLinkEndereco.java
+                             EnderecoAtualizador.java
+                             EnderecoSelecionador.java
+                          Mercadoria
+                             AdicionadorLinkMercadoria.java
+                             MercadoriaAtualizador.java
+                             MercadoriaSelecionador.java
+                          Servico
+                             AdicionadorLinkServico.java
+                             ServicoAtualizador.java
+                             ServicoSelecionador.java
+                          Telefone
+                             AdicionadorLinkTelefone.java
+                             TelefoneAtualizador.java
+                             TelefoneSelecionador.java
+                          Usuario
+                             AdicionadorLinkUsuario.java
+                             UsuarioAtualizador.java
+                             UsuarioSelecionador.java
+                          Veiculo
+                             AdicionadorLinkVeiculo.java
+                             VeiculoAtualizador.java
+                             VeiculoSelecionador.java
+                          Venda
+                             AdicionadorLinkVenda.java
+                             VendaAtualizador.java
+                             VendaSelecionador.java
+                          AdicionadorLink.java
+                          StringVerificadorNulo.java
+                       repositorios
+                          ClienteRepositorio.java
+                          CredencialCodigoBarraRepositorio.java
+                          CredencialUsuarioSenhaRepositorio.java
+                          DocumentoRepositorio.java
+                          EmailRepositorio.java
+                          EmpresaRepositorio.java
+                          EnderecoRepositorio.java
+                          MercadoriaRepositorio.java
+                          ServicoRepositorio.java
+                          TelefoneRepositorio.java
+                          UsuarioRepositorio.java
+                          VeiculoRepositorio.java
+                          VendaRepositorio.java
+                       servicos
+                          ClienteServico.java
+                          CredencialCodigoBarraServico.java
+                          CredencialUsuarioSenhaServico.java
+                          DocumentoServico.java
+                          EmailServico.java
+                          EmpresaServico.java
+                          EnderecoServico.java
+                          MercadoriaServico.java
+                          ServicoServico.java
+                          TelefoneServico.java
+                          UsuarioServico.java
+                          VeiculoServico.java
+                          VendaServico.java
+                       AutomanagerApplication.java
+                       autobots.lnk
+        resources
+            application.properties
+     test
+         java
+             com
+                 autobots
+                     automanager
+                         AutomanagerApplicationTests.java
+  BANCO_DE_DADOS.md
+  CHANGELOG.md
+  README.md
+  mvnw
+  mvnw.cmd
+  pom.xml
 ```
 
 ---

@@ -28,7 +28,7 @@ public class CredencialUsuarioSenhaServico {
 
     public CredencialUsuarioSenhaExibirDTO buscarPorIdDTO(Long id) {
         CredencialUsuarioSenha credencial = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial de usuário não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial de usurio no encontrada"));
         return converterParaExibirDTO(credencial);
     }
 
@@ -44,7 +44,7 @@ public class CredencialUsuarioSenhaServico {
 
     public void atualizar(CredencialUsuarioSenhaAtualizadorDTO dto) {
         CredencialUsuarioSenha credencial = repositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial no encontrada"));
         
         if (dto.getNomeUsuario() != null) credencial.setNomeUsuario(dto.getNomeUsuario());
         if (dto.getSenha() != null) credencial.setSenha(dto.getSenha());
@@ -55,7 +55,7 @@ public class CredencialUsuarioSenhaServico {
 
     public void excluir(Long id) {
         CredencialUsuarioSenha credencial = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial no encontrada"));
         repositorio.delete(credencial);
     }
 

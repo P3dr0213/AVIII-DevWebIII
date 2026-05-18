@@ -43,7 +43,7 @@ public class DocumentoServico {
 
     public DocumentoExibirDTO buscarPorId(Long id) {
         Documento documento = documentoRepositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Documento não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Documento no encontrado"));
 
         Cliente cliente = clienteRepositorio.findAll().stream()
                 .filter(c -> c.getDocumentos().stream()
@@ -56,10 +56,10 @@ public class DocumentoServico {
 
     public DocumentoExibirDTO cadastrarPorId(DocumentoCadastroDTO dto) {
         if (dto.getIdCliente() == null) {
-            throw new EntidadeNaoEncontradaException("O id do cliente é obrigatório");
+            throw new EntidadeNaoEncontradaException("O id do cliente  obrigatrio");
         }
         Cliente cliente = clienteRepositorio.findById(dto.getIdCliente())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente no encontrado"));
 
         Documento documento = new Documento();
 
@@ -81,7 +81,7 @@ public class DocumentoServico {
 
     public DocumentoExibirDTO atualizarPorId(DocumentoAtualizadorDTO dto) {
         Documento documento = documentoRepositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Documento não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Documento no encontrado"));
 
         documento.setTipo(dto.getTipo());
         documento.setNumero(dto.getNumero());
@@ -102,13 +102,13 @@ public class DocumentoServico {
                 .filter(c -> c.getDocumentos().stream()
                         .anyMatch(d -> d.getId().equals(id)))
                 .findFirst()
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Documento não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Documento no encontrado"));
 
         boolean removido = cliente.getDocumentos()
                 .removeIf(d -> d.getId().equals(id));
 
         if (!removido) {
-            throw new EntidadeNaoEncontradaException("Documento não encontrado");
+            throw new EntidadeNaoEncontradaException("Documento no encontrado");
         }
         clienteRepositorio.save(cliente);
     }

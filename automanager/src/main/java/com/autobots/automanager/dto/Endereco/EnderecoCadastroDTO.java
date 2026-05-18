@@ -10,23 +10,23 @@ public class EnderecoCadastroDTO {
 
     private Long idCliente;
 
-    @NotBlank(message = "O estado é obrigatório")
-    @Size(max = 100, message = "O estado deve ter no máximo 100 caracteres")
+    @NotBlank(message = "O estado  obrigatrio")
+    @Size(max = 100, message = "O estado deve ter no mximo 100 caracteres")
     private String estado;
 
-    @NotBlank(message = "A cidade é obrigatória")
+    @NotBlank(message = "A cidade  obrigatria")
     private String cidade;
 
-    @NotBlank(message = "O bairro é obrigatório")
+    @NotBlank(message = "O bairro  obrigatrio")
     private String bairro;
 
-    @NotBlank(message = "A rua é obrigatória")
+    @NotBlank(message = "A rua  obrigatria")
     private String rua;
 
-    @NotBlank(message = "O número é obrigatório")
+    @NotBlank(message = "O nmero  obrigatrio")
     private String numero;
 
-    @NotBlank(message = "O CEP é obrigatório")
+    @NotBlank(message = "O CEP  obrigatrio")
     private String cep;
 
     private String informacoesAdicionais;

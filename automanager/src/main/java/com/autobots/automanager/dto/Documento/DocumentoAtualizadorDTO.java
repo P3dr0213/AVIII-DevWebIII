@@ -6,12 +6,12 @@ import lombok.Data;
 
 @Data
 public class DocumentoAtualizadorDTO {
-    @NotNull(message = "O id do documento é obrigatório")
+    @NotNull(message = "O id do documento  obrigatrio")
     private Long id;
 
-    @NotBlank(message = "O tipo do documento é obrigatório")
+    @NotBlank(message = "O tipo do documento  obrigatrio")
     private String tipo;
 
-    @NotBlank(message = "O número do documento é obrigatório")
+    @NotBlank(message = "O nmero do documento  obrigatrio")
     private String numero;
 }

@@ -6,10 +6,10 @@ import lombok.Data;
 
 @Data
 public class ServicoCadastrarDTO {
-    @NotBlank(message = "O nome do serviço é obrigatório")
+    @NotBlank(message = "O nome do servio  obrigatrio")
     private String nome;
 
-    @PositiveOrZero(message = "O valor do serviço não pode ser negativo")
+    @PositiveOrZero(message = "O valor do servio no pode ser negativo")
     private double valor;
 
     private String descricao;

@@ -45,20 +45,20 @@ public class ClienteServico {
 
     public ClienteExibirDTO buscarPorIdDTO(Long id) {
         Cliente cliente = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente no encontrado"));
         return converterParaExibirDTO(cliente);
     }
 
     public void atualizar(Cliente atualizacao) {
         Cliente cliente = repositorio.findById(atualizacao.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente no encontrado"));
         atualizador.atualizar(cliente, atualizacao);
         repositorio.save(cliente);
     }
 
     public void excluir(Long id) {
         Cliente cliente = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente no encontrado"));
         repositorio.delete(cliente);
     }
 
@@ -137,7 +137,7 @@ public class ClienteServico {
 
     public void atualizarViaDTO(ClienteAtualizadorDTO dto) {
         Cliente cliente = repositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente no encontrado"));
 
         Cliente dadosAtualizacao = new Cliente();
         dadosAtualizacao.setNome(dto.getNome());

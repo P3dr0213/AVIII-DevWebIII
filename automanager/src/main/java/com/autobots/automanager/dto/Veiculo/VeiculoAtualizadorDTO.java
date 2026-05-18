@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class VeiculoAtualizadorDTO {
-    @NotNull(message = "O id do veículo é obrigatório")
+    @NotNull(message = "O id do veculo  obrigatrio")
     private Long id;
 
     private TipoVeiculo tipo;

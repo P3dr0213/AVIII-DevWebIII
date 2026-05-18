@@ -27,7 +27,7 @@ public class EmailServico {
 
     public EmailExibirDTO buscarPorIdDTO(Long id) {
         Email email = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("E-mail não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("E-mail no encontrado"));
         return converterParaExibirDTO(email);
     }
 
@@ -40,7 +40,7 @@ public class EmailServico {
 
     public void atualizar(EmailAtualizadorDTO dto) {
         Email email = repositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("E-mail não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("E-mail no encontrado"));
         if (dto.getEndereco() != null) {
             email.setEndereco(dto.getEndereco());
         }
@@ -49,7 +49,7 @@ public class EmailServico {
 
     public void excluir(Long id) {
         Email email = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("E-mail não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("E-mail no encontrado"));
         repositorio.delete(email);
     }
 

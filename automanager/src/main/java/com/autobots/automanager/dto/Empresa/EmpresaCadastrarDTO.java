@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class EmpresaCadastrarDTO {
-    @NotBlank(message = "A razão social é obrigatória")
+    @NotBlank(message = "A razo social  obrigatria")
     private String razaoSocial;
 
     private String nomeFantasia;

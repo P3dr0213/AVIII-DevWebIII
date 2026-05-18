@@ -7,15 +7,15 @@ import lombok.Data;
 
 @Data
 public class ClienteAtualizadorDTO {
-    @NotNull(message = "O id do cliente é obrigatório")
+    @NotNull(message = "O id do cliente  obrigatrio")
     private Long id;
 
-    @NotBlank(message = "O nome do cliente é obrigatório")
+    @NotBlank(message = "O nome do cliente  obrigatrio")
     private String nome;
 
-    @NotBlank(message = "O nome social é obrigatório")
+    @NotBlank(message = "O nome social  obrigatrio")
     private String nomeSocial;
 
-    @NotNull(message = "A data de nascimento é obrigatória")
+    @NotNull(message = "A data de nascimento  obrigatria")
     private Date dataNascimento;
 }

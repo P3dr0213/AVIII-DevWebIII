@@ -33,7 +33,7 @@ public class VeiculoServico {
 
     public VeiculoExibirDTO buscarPorIdDTO(Long id) {
         Veiculo veiculo = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Veículo não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Veculo no encontrado"));
         return converterParaExibirDTO(veiculo);
     }
 
@@ -45,7 +45,7 @@ public class VeiculoServico {
 
         if (dto.getProprietarioId() != null) {
             Usuario proprietario = usuarioRepositorio.findById(dto.getProprietarioId())
-                    .orElseThrow(() -> new EntidadeNaoEncontradaException("Proprietário não encontrado"));
+                    .orElseThrow(() -> new EntidadeNaoEncontradaException("Proprietrio no encontrado"));
             veiculo.setProprietario(proprietario);
             veiculo = repositorio.save(veiculo);
             proprietario.getVeiculos().add(veiculo);
@@ -59,7 +59,7 @@ public class VeiculoServico {
 
     public void atualizar(VeiculoAtualizadorDTO dto) {
         Veiculo veiculo = repositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Veículo não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Veculo no encontrado"));
 
         if (dto.getTipo() != null) veiculo.setTipo(dto.getTipo());
         if (dto.getModelo() != null) veiculo.setModelo(dto.getModelo());
@@ -67,7 +67,7 @@ public class VeiculoServico {
         
         if (dto.getProprietarioId() != null) {
             Usuario novoProprietario = usuarioRepositorio.findById(dto.getProprietarioId())
-                    .orElseThrow(() -> new EntidadeNaoEncontradaException("Proprietário não encontrado"));
+                    .orElseThrow(() -> new EntidadeNaoEncontradaException("Proprietrio no encontrado"));
 
             Usuario proprietarioAnterior = veiculo.getProprietario();
             if (proprietarioAnterior != null && !proprietarioAnterior.getId().equals(novoProprietario.getId())) {
@@ -86,7 +86,7 @@ public class VeiculoServico {
 
     public void excluir(Long id) {
         Veiculo veiculo = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Veículo não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Veculo no encontrado"));
         repositorio.delete(veiculo);
     }
 

@@ -18,12 +18,12 @@ import lombok.Data;
 @Data
 public class UsuarioCadastrarDTO {
 
-    @NotBlank(message = "O nome do usuário é obrigatório")
+    @NotBlank(message = "O nome do usurio  obrigatrio")
     private String nome;
 
     private String nomeSocial;
 
-    @NotEmpty(message = "O usuário deve ter pelo menos um perfil atribuído")
+    @NotEmpty(message = "O usurio deve ter pelo menos um perfil atribudo")
     private Set<PerfilUsuario> perfis;
 
     @Valid

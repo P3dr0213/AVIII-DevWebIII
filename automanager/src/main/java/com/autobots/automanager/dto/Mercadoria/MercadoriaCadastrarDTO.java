@@ -8,20 +8,20 @@ import lombok.Data;
 
 @Data
 public class MercadoriaCadastrarDTO {
-    @NotBlank(message = "O nome da mercadoria é obrigatório")
+    @NotBlank(message = "O nome da mercadoria  obrigatrio")
     private String nome;
 
     private String descricao;
 
-    @PositiveOrZero(message = "A quantidade não pode ser negativa")
+    @PositiveOrZero(message = "A quantidade no pode ser negativa")
     private long quantidade;
 
-    @PositiveOrZero(message = "O valor não pode ser negativo")
+    @PositiveOrZero(message = "O valor no pode ser negativo")
     private double valor;
 
-    @NotNull(message = "A data de validade é obrigatória")
+    @NotNull(message = "A data de validade  obrigatria")
     private Date validade;
 
-    @NotNull(message = "A data de fabricação é obrigatória")
+    @NotNull(message = "A data de fabricao  obrigatria")
     private Date fabricao;
 }

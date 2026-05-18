@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class MercadoriaAtualizadorDTO {
-    @NotNull(message = "O id da mercadoria é obrigatório")
+    @NotNull(message = "O id da mercadoria  obrigatrio")
     private Long id;
 
     private String nome;

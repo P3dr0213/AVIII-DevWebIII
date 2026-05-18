@@ -5,9 +5,9 @@ import lombok.Data;
 
 @Data
 public class CredencialUsuarioSenhaCadastrarDTO {
-    @NotBlank(message = "O nome de usuário é obrigatório")
+    @NotBlank(message = "O nome de usurio  obrigatrio")
     private String nomeUsuario;
 
-    @NotBlank(message = "A senha é obrigatória")
+    @NotBlank(message = "A senha  obrigatria")
     private String senha;
 }

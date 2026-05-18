@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class VendaAtualizadorDTO {
-    @NotNull(message = "O id da venda é obrigatório")
+    @NotNull(message = "O id da venda  obrigatrio")
     private Long id;
 
     private String identificacao;

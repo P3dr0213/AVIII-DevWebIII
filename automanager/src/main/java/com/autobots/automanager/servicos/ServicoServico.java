@@ -27,7 +27,7 @@ public class ServicoServico {
 
     public ServicoExibirDTO buscarPorIdDTO(Long id) {
         Servico servico = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Serviço não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Servio no encontrado"));
         return converterParaExibirDTO(servico);
     }
 
@@ -43,7 +43,7 @@ public class ServicoServico {
 
     public void atualizar(ServicoAtualizadorDTO dto) {
         Servico servico = repositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Serviço não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Servio no encontrado"));
         
         if (dto.getNome() != null) servico.setNome(dto.getNome());
         if (dto.getDescricao() != null) servico.setDescricao(dto.getDescricao());
@@ -54,7 +54,7 @@ public class ServicoServico {
 
     public void excluir(Long id) {
         Servico servico = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Serviço não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Servio no encontrado"));
         repositorio.delete(servico);
     }
 

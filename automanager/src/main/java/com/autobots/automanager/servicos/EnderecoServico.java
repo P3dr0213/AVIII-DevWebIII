@@ -36,7 +36,7 @@ public class EnderecoServico {
 
     public EnderecoExibirDTO buscarPorId(Long id) {
         Endereco endereco = enderecoRepositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Endereço não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Endereo no encontrado"));
 
         Cliente cliente = clienteRepositorio.findAll().stream()
                 .filter(c -> c.getEndereco() != null
@@ -49,10 +49,10 @@ public class EnderecoServico {
 
     public EnderecoExibirDTO cadastrar(EnderecoCadastroDTO dto) {
         if (dto.getIdCliente() == null) {
-            throw new EntidadeNaoEncontradaException("O id do cliente é obrigatório");
+            throw new EntidadeNaoEncontradaException("O id do cliente  obrigatrio");
         }
         Cliente cliente = clienteRepositorio.findById(dto.getIdCliente())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente no encontrado"));
 
         Endereco endereco = new Endereco();
 
@@ -75,7 +75,7 @@ public class EnderecoServico {
 
     public EnderecoExibirDTO atualizarporId(EnderecoAtualizadorDTO dto) {
         Endereco endereco = enderecoRepositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Endereço não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Endereo no encontrado"));
 
         endereco.setEstado(dto.getEstado());
         endereco.setCidade(dto.getCidade());
@@ -101,7 +101,7 @@ public class EnderecoServico {
                 .filter(c -> c.getEndereco() != null
                         && c.getEndereco().getId().equals(id))
                 .findFirst()
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Endereço não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Endereo no encontrado"));
 
         cliente.setEndereco(null);
 

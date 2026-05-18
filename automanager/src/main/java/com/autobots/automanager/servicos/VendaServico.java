@@ -41,7 +41,7 @@ public class VendaServico {
 
     public VendaExibirDTO buscarPorIdDTO(Long id) {
         Venda venda = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Venda não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Venda no encontrada"));
         return converterParaExibirDTO(venda);
     }
 
@@ -51,10 +51,10 @@ public class VendaServico {
         venda.setCadastro(new Date());
 
         venda.setCliente(usuarioRepositorio.findById(dto.getClienteId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente não encontrado")));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente no encontrado")));
         
         venda.setFuncionario(usuarioRepositorio.findById(dto.getFuncionarioId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Funcionário não encontrado")));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Funcionrio no encontrado")));
 
         if (dto.getVeiculoId() != null) {
             venda.setVeiculo(veiculoRepositorio.findById(dto.getVeiculoId()).orElse(null));
@@ -74,23 +74,23 @@ public class VendaServico {
 
     public void atualizar(VendaAtualizadorDTO dto) {
         Venda venda = repositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Venda não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Venda no encontrada"));
 
         if (dto.getIdentificacao() != null) venda.setIdentificacao(dto.getIdentificacao());
 
         if (dto.getClienteId() != null) {
             venda.setCliente(usuarioRepositorio.findById(dto.getClienteId())
-                    .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente não encontrado")));
+                    .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente no encontrado")));
         }
 
         if (dto.getFuncionarioId() != null) {
             venda.setFuncionario(usuarioRepositorio.findById(dto.getFuncionarioId())
-                    .orElseThrow(() -> new EntidadeNaoEncontradaException("Funcionário não encontrado")));
+                    .orElseThrow(() -> new EntidadeNaoEncontradaException("Funcionrio no encontrado")));
         }
 
         if (dto.getVeiculoId() != null) {
             venda.setVeiculo(veiculoRepositorio.findById(dto.getVeiculoId())
-                    .orElseThrow(() -> new EntidadeNaoEncontradaException("Veículo não encontrado")));
+                    .orElseThrow(() -> new EntidadeNaoEncontradaException("Veculo no encontrado")));
         }
 
         if (dto.getMercadoriasIds() != null) {
@@ -106,7 +106,7 @@ public class VendaServico {
 
     public void excluir(Long id) {
         Venda venda = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Venda não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Venda no encontrada"));
         repositorio.delete(venda);
     }
 
@@ -115,7 +115,7 @@ public class VendaServico {
         dto.setId(entidade.getId());
         dto.setIdentificacao(entidade.getIdentificacao());
         dto.setCadastro(entidade.getCadastro());
-        // Os objetos completos (Cliente, Funcionario, etc) serão processados pelo Modelador
+        // Os objetos completos (Cliente, Funcionario, etc) sero processados pelo Modelador
         return dto;
     }
 }

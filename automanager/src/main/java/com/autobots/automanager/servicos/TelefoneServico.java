@@ -43,7 +43,7 @@ public class TelefoneServico {
 
     public TelefoneExibirDTO buscarPorId(Long id) {
         Telefone telefone = telefoneRepositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Telefone não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Telefone no encontrado"));
 
         Cliente cliente = clienteRepositorio.findAll().stream()
                 .filter(c -> c.getTelefones().stream()
@@ -56,10 +56,10 @@ public class TelefoneServico {
 
     public TelefoneExibirDTO cadastrar(TelefoneCadastroDTO dto) {
         if (dto.getIdCliente() == null) {
-            throw new EntidadeNaoEncontradaException("O id do cliente é obrigatório");
+            throw new EntidadeNaoEncontradaException("O id do cliente  obrigatrio");
         }
         Cliente cliente = clienteRepositorio.findById(dto.getIdCliente())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Cliente no encontrado"));
 
         Telefone telefone = new Telefone();
         telefone.setDdd(dto.getDdd());
@@ -81,7 +81,7 @@ public class TelefoneServico {
 
     public TelefoneExibirDTO atualizar(TelefoneAtualizadorDTO dto) {
         Telefone telefone = telefoneRepositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Telefone não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Telefone no encontrado"));
 
         telefone.setDdd(dto.getDdd());
         telefone.setNumero(dto.getNumero());
@@ -102,12 +102,12 @@ public class TelefoneServico {
                 .filter(c -> c.getTelefones().stream()
                         .anyMatch(t -> t.getId().equals(id)))
                 .findFirst()
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Telefone não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Telefone no encontrado"));
 
         Telefone telefone = cliente.getTelefones().stream()
                 .filter(t -> t.getId().equals(id))
                 .findFirst()
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Telefone não encontrado"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Telefone no encontrado"));
 
         cliente.getTelefones().remove(telefone);
 

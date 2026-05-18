@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class EmailCadastroDTO {
-    @NotBlank(message = "O endereço de e-mail é obrigatório")
-    @Email(message = "O formato do e-mail é inválido")
+    @NotBlank(message = "O endereo de e-mail  obrigatrio")
+    @Email(message = "O formato do e-mail  invlido")
     private String endereco;
 }

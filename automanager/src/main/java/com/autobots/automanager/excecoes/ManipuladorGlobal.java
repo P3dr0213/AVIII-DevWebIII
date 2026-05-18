@@ -18,10 +18,10 @@ public class ManipuladorGlobal {
         String mensagens = ex.getBindingResult().getAllErrors().stream()
             .map(erro -> erro.getDefaultMessage())
             .reduce((msg1, msg2) -> msg1 + "; " + msg2)
-            .orElse("Erro de validação");
+            .orElse("Erro de validao");
         
         ErroRespostaDTO erro = new ErroRespostaDTO(
-            "Erro de validação", 
+            "Erro de validao", 
             mensagens
         );
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
@@ -31,7 +31,7 @@ public class ManipuladorGlobal {
     public ResponseEntity<ErroRespostaDTO> manipularViolacaoIntegridade(DataIntegrityViolationException ex) {
         ErroRespostaDTO erro = new ErroRespostaDTO(
             "Erro de integridade de dados.", 
-            "Provavelmente este registro (CPF/RG) já existe ou faltam dados obrigatórios."
+            "Provavelmente este registro (CPF/RG) j existe ou faltam dados obrigatrios."
         );
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
     }
@@ -45,8 +45,8 @@ public class ManipuladorGlobal {
     @ExceptionHandler(org.springframework.web.method.annotation.MethodArgumentTypeMismatchException.class)
     public ResponseEntity<ErroRespostaDTO> manipularErroTipo(org.springframework.web.method.annotation.MethodArgumentTypeMismatchException ex) {
         ErroRespostaDTO erro = new ErroRespostaDTO(
-            "Tipo de dado inválido", 
-            String.format("O parâmetro '%s' deveria ser do tipo %s", ex.getName(), ex.getRequiredType().getSimpleName())
+            "Tipo de dado invlido", 
+            String.format("O parmetro '%s' deveria ser do tipo %s", ex.getName(), ex.getRequiredType().getSimpleName())
         );
         return ResponseEntity.badRequest().body(erro);
     }
@@ -55,7 +55,7 @@ public class ManipuladorGlobal {
     public ResponseEntity<ErroRespostaDTO> manipularJsonInvalido(org.springframework.http.converter.HttpMessageNotReadableException ex) {
         ErroRespostaDTO erro = new ErroRespostaDTO(
             "Erro na leitura do JSON", 
-            "O corpo da requisição possui erros de sintaxe ou caracteres inválidos."
+            "O corpo da requisio possui erros de sintaxe ou caracteres invlidos."
         );
         return ResponseEntity.badRequest().body(erro);
     }
@@ -66,7 +66,7 @@ public class ManipuladorGlobal {
             "Erro interno no servidor", 
             "Ocorreu um erro inesperado. Verifique os dados enviados ou tente mais tarde."
         );
-        System.err.println("Erro não tratado: " + ex.getMessage());
+        System.err.println("Erro no tratado: " + ex.getMessage());
         
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(erro);
     }

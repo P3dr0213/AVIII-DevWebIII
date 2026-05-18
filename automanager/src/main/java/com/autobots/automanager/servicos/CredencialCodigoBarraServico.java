@@ -28,7 +28,7 @@ public class CredencialCodigoBarraServico {
 
     public CredencialQRExibirDTO buscarPorIdDTO(Long id) {
         CredencialCodigoBarra credencial = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial no encontrada"));
         return converterParaExibirDTO(credencial);
     }
 
@@ -43,7 +43,7 @@ public class CredencialCodigoBarraServico {
 
     public void atualizar(CredencialQRAtualizadorDTO dto) {
         CredencialCodigoBarra credencial = repositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial no encontrada"));
         credencial.setCodigo(dto.getCodigo());
         credencial.setInativo(dto.getInativo());
         repositorio.save(credencial);
@@ -51,7 +51,7 @@ public class CredencialCodigoBarraServico {
 
     public void excluir(Long id) {
         CredencialCodigoBarra credencial = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Credencial no encontrada"));
         repositorio.delete(credencial);
     }
 

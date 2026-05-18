@@ -7,15 +7,15 @@ import lombok.Data;
 
 @Data
 public class VeiculoCadastrarDTO {
-    @NotNull(message = "O tipo do veículo é obrigatório")
+    @NotNull(message = "O tipo do veculo  obrigatrio")
     private TipoVeiculo tipo;
 
-    @NotBlank(message = "O modelo do veículo é obrigatório")
+    @NotBlank(message = "O modelo do veculo  obrigatrio")
     private String modelo;
 
-    @NotBlank(message = "A placa do veículo é obrigatória")
+    @NotBlank(message = "A placa do veculo  obrigatria")
     private String placa;
     
-    // ID do proprietário caso seja vinculado no cadastro
+    // ID do proprietrio caso seja vinculado no cadastro
     private Long proprietarioId;
 }

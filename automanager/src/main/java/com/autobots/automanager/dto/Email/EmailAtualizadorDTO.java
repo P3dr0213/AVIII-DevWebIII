@@ -6,9 +6,9 @@ import lombok.Data;
 
 @Data
 public class EmailAtualizadorDTO {
-    @NotNull(message = "O id do e-mail é obrigatório")
+    @NotNull(message = "O id do e-mail  obrigatrio")
     private Long id;
 
-    @Email(message = "O formato do e-mail é inválido")
+    @Email(message = "O formato do e-mail  invlido")
     private String endereco;
 }

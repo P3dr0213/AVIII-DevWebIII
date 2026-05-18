@@ -28,7 +28,7 @@ public class EmpresaServico {
 
     public EmpresaExibirDTO buscarPorIdDTO(Long id) {
         Empresa empresa = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Empresa não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Empresa no encontrada"));
         return converterParaExibirDTO(empresa);
     }
 
@@ -43,7 +43,7 @@ public class EmpresaServico {
 
     public void atualizar(EmpresaAtualizadorDTO dto) {
         Empresa empresa = repositorio.findById(dto.getId())
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Empresa não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Empresa no encontrada"));
         
         if (dto.getRazaoSocial() != null) empresa.setRazaoSocial(dto.getRazaoSocial());
         if (dto.getNomeFantasia() != null) empresa.setNomeFantasia(dto.getNomeFantasia());
@@ -53,7 +53,7 @@ public class EmpresaServico {
 
     public void excluir(Long id) {
         Empresa empresa = repositorio.findById(id)
-                .orElseThrow(() -> new EntidadeNaoEncontradaException("Empresa não encontrada"));
+                .orElseThrow(() -> new EntidadeNaoEncontradaException("Empresa no encontrada"));
         repositorio.delete(empresa);
     }
 
@@ -63,7 +63,7 @@ public class EmpresaServico {
         dto.setRazaoSocial(entidade.getRazaoSocial());
         dto.setNomeFantasia(entidade.getNomeFantasia());
         dto.setCadastro(entidade.getCadastro());
-        // Nota: Mapeamento de coleções (telefones, endereços) deve ser feito via modelador ou serviço específico
+        // Nota: Mapeamento de colees (telefones, endereos) deve ser feito via modelador ou servio especfico
         return dto;
     }
 }
